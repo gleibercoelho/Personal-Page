@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,400;1,500&family=Roboto:wght@100;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <title>Gleiber Coelho</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="perfil" src="content/67958800_2800133523348647_5638659853346930688_n.jpg" alt="" width="50px" height="50">
+        </div>
+        <ul>
+            <li><a href="mailto:gleiberfelipe@hotmail.com" class="hred" target="_blank">E-mail</a></li>
+            <li><a href="https://www.github.com/gleibercoelho" target="_blank">Github</a> </li>
+
+            <li><a href="https://www.linkedin.com/in/gleiber-coelho-40ba6927/" class="href" target="_blank">Linkedin</a>
+            </li>
+
+            <li><a href="https://wa.me/991326989" class="hred" target="_blank">Whatsapp</a></li>
+
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Gleiber Coelho</h1>
+                <h5>Front-end Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+                
+            </div>
+            <div style="display: none;" id="about" class="slide-rotate-hor-top">
+                <h5>Sobre:</h5>
+                <p>
+                
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio omnis qui
+                iure recusandae nostrum totam unde similique natus quas,
+                animi enim facilis molestias aliquam. Illo minima fugit dolorum laudantium voluptate?
+                </p>
+            </div>
+            <div class="form">
+                <form action="" class="action">
+                    
+                        Deixe seu contato: <br>
+                        <input type="email" placeholder="preencha seu e-mail">
+                        <button>Enviar!</button>
+                    
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <script src="https://kit.fontawesome.com/91ff8cb78f.js" crossorigin="anonymous"></script>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+                  
+
+        }
+    </script>
+</body>
+
+</html>
